@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="control.js">
+    </script>
+    <title>Portfolio - Mamoudou</title>
+</head>
+<body>
+    <header>
+        <button id="menu-btn" onclick="openOrCloseMenu()">Menu</button>
+        <img src="images/20230224_112318-removebg-preview.png" alt="Icone" class="logo">
+        <ul class="menu-container">
+            <li><a href="#">Accueil</a>  
+            </li>
+            <li><a href="#expertige-content">Expertige</a>
+                <ul class="menu-item">
+                    <li><a href="#dev-web">Developpement web</a></li>
+                    <li><a href="#dev-mobile">Developpement mobile</a></li>
+                    <li><a href="#devops">DevOps</a></li>
+                    <li><a href="#etude">Etude et Analyse</a></li>
+                    <li><a href="#assurance">Assurance Qualité</a></li>
+                </ul>
+            </li>
+            <li><a href="#projects-content">Projets</a>
+                <ul class="menu-item">
+                    <li><a href="#sante">Sante</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#mine">Mine</a></li>
+                    <li><a href="#commerce">Commerce</a></li>
+                    <li><a href="#transport">Transport</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+        <button id="help-btn">?</button>
+    </header>
+
+    <div class="menu-section" id="menu-section">
+        <ul class="menu-container-mobile">
+            <li><a href="#">Accueil</a>  
+            </li>
+            <li>
+                <div class="menu-plier" onclick="openExpertige()" id="expertige">
+                    <a href="#">Expertige</a>
+                    <div class="triangle-plier" onclick="openExpertige()" id = "menu-expertige"></div>
+                </div>
+                <ul class="menu-item-mobile" id="expertige-items">
+                    <li><a href="#dev-web">Developpement web</a></li>
+                    <li><a href="#dev-mobile">Developpement mobile</a></li>
+                    <li><a href="#devops">DevOps</a></li>
+                    <li><a href="#etude">Etude et Analyse</a></li>
+                    <li><a href="#assurance">Assurance Qualité</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="menu-plier" onclick = "openProjects()" id="projects">
+                    <a href="#">Projets</a>
+                    <div class="triangle-plier" id="menu-projets" onclick="openProjects()"></div>
+                </div>
+                <ul class="menu-item-mobile" id="projects-item">
+                    <li><a href="#sante">Sante</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#mine">Mine</a></li>
+                    <li><a href="#commerce">Commerce</a></li>
+                    <li><a href="#transport">Transport</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="intro">
+            <h1>Mamoudou Diallo</h1>
+            <p class="description">Etudiant en licence 3 genie Informatique, developpeur web full-stack, travail en freelance dépuis 2 ans. Possède par ailleurs des connaisances dans le domaine de l'inteligence artificiel</p>
+        </div>
+    </div>
+
+    <div class="expertige-container" id="expertige-content">
+        <h2>Expertige</h2>
+        <div class="card-container">
+            <div class="item-card" id="dev-web">
+                <h3>Developpement web</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In porro voluptatem alias commodi adipisci impedit dignissimos quasi totam sit libero, maxime eum omnis quaerat suscipit fugiat nostrum rerum voluptas quisquam!</p>
+            </div>
+            <div class="item-card" id="dev-mobile">
+                <h3>Developpement mobile</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In porro voluptatem alias commodi adipisci impedit dignissimos quasi totam sit libero, maxime eum omnis quaerat suscipit fugiat nostrum rerum voluptas quisquam!</p>
+            </div>
+            <div class="item-card" id="devops">
+                <h3>DevOps</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In porro voluptatem alias commodi adipisci impedit dignissimos quasi totam sit libero, maxime eum omnis quaerat suscipit fugiat nostrum rerum voluptas quisquam!</p>
+            </div>
+            <div class="item-card" id="etude">
+                <h3>Etude et Analyse</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In porro voluptatem alias commodi adipisci impedit dignissimos quasi totam sit libero, maxime eum omnis quaerat suscipit fugiat nostrum rerum voluptas quisquam!</p>
+            </div>
+            <div class="item-card" id="assurance">
+                <h3>Assurance Qualité</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In porro voluptatem alias commodi adipisci impedit dignissimos quasi totam sit libero, maxime eum omnis quaerat suscipit fugiat nostrum rerum voluptas quisquam!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects-container" id="projects-content">
+        <h2>Projets</h2>
+        <div class="card-container">
+            <div class="item-card" id="sante">
+                <h3>Santé</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In porro voluptatem alias commodi adipisci impedit dignissimos quasi totam sit libero, maxime eum omnis quaerat suscipit fugiat nostrum rerum voluptas quisquam!</p>
+            </div>
+            <div class="item-card" id="education">
+                <h3>Education</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In porro voluptatem alias commodi adipisci impedit dignissimos quasi totam sit libero, maxime eum omnis quaerat suscipit fugiat nostrum rerum voluptas quisquam!</p>
+            </div>
+            <div class="item-card" id="mine">
+                <h3>Mine</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In porro voluptatem alias commodi adipisci impedit dignissimos quasi totam sit libero, maxime eum omnis quaerat suscipit fugiat nostrum rerum voluptas quisquam!</p>
+            </div>
+            <div class="item-card" id="commerce">
+                <h3>Commerce</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In porro voluptatem alias commodi adipisci impedit dignissimos quasi totam sit libero, maxime eum omnis quaerat suscipit fugiat nostrum rerum voluptas quisquam!</p>
+            </div>
+            <div class="item-card" id="transport">
+                <h3>Transport</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In porro voluptatem alias commodi adipisci impedit dignissimos quasi totam sit libero, maxime eum omnis quaerat suscipit fugiat nostrum rerum voluptas quisquam!</p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <footer>
+        <div id ="profile">
+            <img src="images/20230224_112318-removebg-preview.png" alt="profile">
+        </div>
+        <div>
+            <form action="#">
+                <fieldset>
+                    <legend>Nous ecrire</legend>
+                    <label for="nom">Nom <input type="text" id="nom" required></label>
+                    <label for="email">E-mail<input type="email" id="email" required></label>
+                    <label for="message">Votre message <textarea name="" id="message" cols="30" rows="4" placeholder="Ecrivez ici..."></textarea></label>
+                    <input type="submit" value="Envoyer">
+                </fieldset>
+                
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
